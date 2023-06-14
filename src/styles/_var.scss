@@ -1,4 +1,11 @@
-$prim: red;
+$background: #101b39;
+$white: rgb(255, 252, 255);
+
+$color-projects: #FF6B6B;   // vibrant red
+$color-skills: #FFD166;     // bright yellow
+$color-contact: #06D6A0;    // refreshing green
+$color-education: #118AB2;  // deep blue
+$color-home: #EF476F;       // playful pink
 
 @mixin flex-container ($direction, $space, $items) {
   display: flex;

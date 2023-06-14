@@ -1,8 +1,41 @@
 @use './var';
+@use './components/home';
+@use './components/menu';
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var.$prim;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var.$white;
 }
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+  body {
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    overflow: hidden;
+    div.App {
+      main {
+        background-color: var.$background;
+        height: 100vh;
+        width: 100vw;
+        div.Main {
+          border: 1px solid red;
+          margin-left: 46vh;
+          height: inherit;
+        }
+      }
+    }
+  }
+}
+
+/* Query Mobile */
+@media screen and (max-width: 765px) {}
+
+
+/* Query Tablet */
+@media screen and (min-width: 766px) and (max-width: 1023px) {}
